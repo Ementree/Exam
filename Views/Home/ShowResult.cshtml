@@ -1,0 +1,45 @@
+﻿@{
+    List<HtmlSource> links = ViewBag.Links;
+    var flag = ViewBag.Flag;
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <form method="post" action="/Home/ShowResult">
+        <div>
+            Domain
+            <input type="text" name="domain"/>
+        </div>
+        <input type="submit" value="Смотреть" />
+    </form>
+    <table>
+        <tr>
+            <td>
+                Url
+            </td>
+            <td>
+                Страница
+            </td>
+        </tr>
+        @if (flag)
+        { 
+           @foreach(var link in links)
+            {
+                <tr>
+                    <td>
+                        @link.url
+                    </td>
+                    <td>
+                        @link.body
+                    </td>
+                </tr>
+            }
+        }
+ 
+    </table>
+</body>
+</html>
+
