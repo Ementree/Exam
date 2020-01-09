@@ -1,8 +1,13 @@
 ﻿<Properties StartupConfiguration="{34E43F23-3014-46A6-B0A3-E6260BEE9EC4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/HtmlContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/HtmlSource.cs">
     <Files>
-      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="Models/HtmlContext.cs" Line="1" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="43" Column="46" />
+      <File FileName="Models/HtmlContext.cs" Line="20" Column="1" />
+      <File FileName="Models/HtmlSource.cs" Line="20" Column="1" />
+      <File FileName="Models/HtmlSourceMethods.cs" Line="5" Column="1" />
+      <File FileName="Models/LinkWalker.cs" Line="16" Column="10" />
+      <File FileName="Program.cs" Line="16" Column="1" />
+      <File FileName="Program.cs" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +16,7 @@
             <Node name="Exam" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="HtmlContext.cs" selected="True" />
+                <Node name="HtmlSource.cs" selected="True" />
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />

@@ -15,8 +15,6 @@ namespace Exam.Models
             addedLinks = new HashSet<string>();
         }
 
-        public object HtmlSourceMethod { get; private set; }
-
         public async Task<List<HtmlSource>> Walk(int currentDepth, List<string> currentLinks, List<HtmlSource> resultLinks)
         {
             foreach (var link in currentLinks)

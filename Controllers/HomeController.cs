@@ -50,20 +50,27 @@ namespace Exam.Controllers
         {
             var db = new HtmlContext();
             var links = new List<HtmlSource>();
-            foreach (var html in db.Htmls)
-            {
-                var domainHtml = html.url.Split('/');
-                if (html.url.Contains(domain))
-                    links.Add(html);
-            }
             var flag = false;
-            if (links.Count() == 0)
-                links.Add(new HtmlSource());
-            else
+
+            if (domain != null)
             {
-                flag = true;
+                foreach (var html in db.Htmls)
+                {
+                    var domainHtml = html.url.Split('/');
+                    if (html.url.Contains(domain))
+                        links.Add(html);
+                }
+
+                if (links.Count() == 0)
+                    links.Add(new HtmlSource());
+                else
+                {
+                    flag = true;
+                }
             }
-            ViewBag.Links = links;
+            else links = db.Htmls.ToList();
+
+            ViewBag.Links = links.Distinct().ToList();
             ViewBag.Flag = flag;
             return View("~/Views/Home/ShowResult.cshtml");
         }

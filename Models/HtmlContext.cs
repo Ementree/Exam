@@ -13,7 +13,7 @@ namespace Exam.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=exam3;Username=postgres;Password=зщыепкуы");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=exam4;Username=postgres;Password=зщыепкуы");
         }
     }
 }
